@@ -1,0 +1,1294 @@
+.is--ctl-checkout.is--act-cart{
+	 section.content-main {
+		background: transparent !important;
+		.content-main--inner{
+			background: transparent !important;
+		} 
+	}
+	a.btn.btn--checkout-proceed.is--primary.right.is--icon-right.is--large{
+		font-weight: normal !important;
+	}
+}
+.is--ctl-register, .is--ctl-checkout, .is--ctl-account{
+	.header-main {
+		.logo-main{
+			@media only screen and (max-width:767px){
+				display:none;
+			}
+		}
+		.logo_block .logo-main{
+			display:block;
+		}
+	}
+	.navigation-main{
+		display:none;
+	}
+	section.content-main{
+		margin-top:0;
+	}
+}
+.is--ctl-register, .is--ctl-account
+{
+	section.content-main{
+		.content--wrapper{
+			h2{
+			
+			}
+		}
+	}
+	.basket--details{
+		h2{
+			color:#000;
+		}
+	}
+}
+.product--table{
+	.table--actions {
+		.main--actions{
+			.btn{
+				border: 0 none;
+						border-radius: 0;
+						height: 4rem;
+						text-align: center;
+						font-size: 27px;
+						font-family: 'Raleway';
+						text-transform: uppercase;
+						font-weight: 500;
+						width:100%;
+						max-width:100%;
+						i{
+							visibility:hidden;
+						}
+			}
+		}
+	}
+}
+is--ctl-register.is--act-index.is--target-checkout{
+	#registration{
+		width:75%;
+		float: left;
+		@media only screen and (max-width:767px){
+			display:block !important; 		
+
+		}
+	}
+	@media only screen and (min-width: 48em){
+		.register--login {
+			width:100% !important;
+			float:left;
+		}
+	}
+	 #registration{
+		display:block !important; 
+	}
+
+
+}
+.is--ctl-checkout.is--act-shippingpayment{
+.header-main{
+	border-bottom:0;
+}
+	.payment{
+			.panel--body{
+				color:#000;
+				line-height: 26px;
+				.set-default{
+					label{
+					color:#000;
+					}
+				}
+			}
+		}
+	.product--table .table--footer {
+		display: none;
+	}
+	.confirm--actions.table--actions.actions--bottom{
+		margin-top: 0;
+		.btn{
+			margin-top: 0;
+		}
+	}
+	.content--confirm .confirm--inner-container .payment--method-list{
+		margin-bottom:0;
+	}
+}
+.is--ctl-register.is--act-index, .is--ctl-checkout.is--act-confirm, .is--ctl-checkout.is--act-shippingpayment{
+	.content--confirm .method--description{
+		padding-left:0;
+	}
+	.dispatch--method-list.panel, .payment--method-list.panel{
+		.panel--body{
+			
+			.dispatch--method, .payment--method{
+				background:#fff;
+				margin-bottom:1rem; 
+				height: 100px;
+				position:relative;
+				display:flex;			
+				.method--input{
+					-ms-transform: translateY(0);
+					-webkit-transform: translateY(0);
+					transform: translateY(0);
+					left: 1%;
+				}
+				.method--label{
+					-ms-transform:translateY(0);
+					-webkit-transform: translateY(0);
+					transform: translateY(0);
+					padding-left: 2%;
+					width: 100%;
+					display: block;
+					cursor:pointer;
+					vertical-align: middle;
+					display: flex;
+					height: auto;
+					align-self: center;
+					label{
+						width: 100%;
+						display: block;
+						cursor:pointer;
+						vertical-align: middle;
+						height:100%;
+						position: relative;
+					}
+				}				
+				.method--input, .method--label{
+					position: absolute;
+					display: flex;
+					flex-direction: column;
+				}
+				.method--description{
+					font-size: 14px;
+					font-weight: normal !important;
+					width:95%;
+					display: flex;
+					align-self: flex-start;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					p{
+						width:35%;
+						margin-bottom:0;
+					}
+					img{
+						position: absolute;
+						right: 5vw;
+						top: 2%;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+	section.content-main{
+		width:70%;
+		display:inline-block;
+	}
+	.bcright-sidebar{
+		padding-top:0;
+	}
+	.register--action .register--submit.btn
+	{
+		margin-bottom: 25px;
+	}
+	.register--error-msg {
+		color: #e74c3c;
+		float: left;
+	}
+	@media only screen and (min-width:320px) and (max-width:767px){
+		section.content-main, .bcright-sidebar{
+			width:100%;
+		}	
+	}
+	
+}
+
+.is--ctl-register, .is--ctl-checkout, .is--ctl-account{
+				.method--input input[type="radio"]
+				{
+					-webkit-appearance: none !important;
+					-moz-appearance: none;
+					position: relative;
+				}
+				.method--input input[type="radio"]:checked::after{
+					position:absolute;
+					content: url(@bc_tick_bold);
+					left: 61vw;
+					top: 1.5rem;
+				}
+				 .header--navigation{
+				 flex-direction: row;
+					p, .logo-main{
+						display: block;
+					}
+					
+				}
+				input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill, input:focus{
+						background-color:#fff !important;
+						background:#fff !important;
+				}
+				
+				input[type="checkbox"]{
+						width: 5mm;
+						-webkit-appearance: none !important;
+						-moz-appearance: none;
+						height: 5mm;
+						border: .1mm solid #fff !important;
+						position: relative;
+						top: 3px;
+						border: 0 none;
+						border-radius: 0;
+						margin-right: 7px;
+						background: #fff;
+						outline: none !important;
+						-webkit-outline: none !important;
+						-moz-outline: none !important;
+						-ms-outline: none !important;
+					}
+					input[type="checkbox"]:checked::after {
+						margin-left: 2mm;
+						margin-top: -20px;
+						width: 2mm;
+						height: 6mm;
+						border: 1px solid #000;
+							border-top-width: 1px;
+							border-right-width: 1px;
+							border-bottom-width: 1px;
+							border-left-width: 1px;
+						border-width: 0 .7mm .7mm 0;
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+						content: "";
+						display: inline-block;
+						outline: none !important;
+						-webkit-outline: none !important;
+						-moz-outline: none !important;
+						-ms-outline: none !important;
+					}
+	header.header-main{
+		min-height: 100px;
+		padding-top: 1.8rem;
+	}
+	.steps--container{
+		margin-top:2.5rem !important;
+		margin-bottom:2.5rem !important;
+		ul.steps--list{
+			li, li span.text{
+					font-family: 'Vidaloka', serif;
+					color:#7e7e7e;
+					font-size: 32px;
+					font-weight: normal !important;
+				}
+				li.steps--entry.is--active, li.steps--entry.is--active span {
+					color: #000;
+				}
+			 li span[class^="icon"]{
+					font-size: 60px;
+				}
+			}		
+		}		
+	
+	section.content-main{
+		background: #f3f3f3;
+		border: 0 none;
+		box-shadow: none !important;
+		
+		.content-main--inner{
+			background:#f3f3f3
+		}
+		.content--wrapper{
+				.register--login-lostpassword{
+					a{    
+						font-size: 17px;
+						color: #000;
+					}
+				}		
+				#password-info-b-privacy{
+					text-decoration: none !important;
+				}
+				#register--address-bc{
+					text-decoration: none !important;
+				}
+				.register--advantages {
+					display:none;
+				}
+				.register--content .payment--method, .register--content .dispatch--method{
+					display:flex;			
+				}
+				.method--input, .payment--input{
+					padding-right:15px;
+				} 
+				.method--label{
+					width: 13vw;
+					label{
+						font-family: 'Raleway';
+						font-size: 17px;
+						line-height: 28px;
+						color: #000;
+						font-weight:normal;
+					}
+				}
+				.method--description{
+					padding-top: 0;
+					width: 100%;
+					font-size: 17px;
+					color: #000;
+				}
+				.register--content .register--action{
+					margin:0;
+				}
+				#register--form{
+					.register--birthdate{
+						 label.birthday--label{
+							font-size: 26px;
+							color: #000;
+							padding-bottom: 1.5rem;
+							font-family: 'Vidaloka', serif;
+							font-weight: 200;   
+						}
+						div[class^="register--birth"]{
+							width:30%;
+						}
+					}
+					.panel-bc.register--shipping{
+						.panel--body-bc{
+							margin-top: 1.5rem;
+						}
+					}
+					.register--alt-shipping {
+						padding-bottom: 1.5rem;
+						label{
+							font-size: 17px;
+							color: #000;
+						}
+					}
+					.register--password-description{
+						font-size: 17px;
+						color: #000;
+						line-height: 35px;
+					}
+					.register--check{
+						label{
+							font-size: 17px;
+							color: #000;
+							line-height: 35px;
+						}
+					}
+				}
+				#brill_account{
+					
+				}
+				#registration{
+					border: 0 none;
+					background: #f3f3f3;
+					.register--login .register--login-description{
+							display:none;
+					}
+					.panel--title{
+						margin:0;
+						cursor:pointer;
+					}
+					.panel{
+					    margin-bottom: 1rem;	
+					    padding: 0;
+					}	
+					.register--advantages-list{
+						color: #000;
+					}
+					.panel--title{
+						position: relative;
+					}					
+				}
+				form#register--form{
+					input[type="checkbox"]{
+						width: 5mm;
+						-webkit-appearance: none !important;
+						-moz-appearance: none;
+						height: 5mm;
+						border: .1mm solid #fff !important;
+						position: relative;
+						top: 3px;
+						border: 0 none;
+						border-radius: 0;
+						margin-right: 7px;
+						background: #fff;
+						outline: none !important;
+						-webkit-outline: none !important;
+						-moz-outline: none !important;
+						-ms-outline: none !important;
+					}
+					input[type="checkbox"]:checked::after {
+						margin-left: 2mm;
+						margin-top: -20px;
+						width: 2mm;
+						height: 6mm;
+						border: 1px solid #000;
+							border-top-width: 1px;
+							border-right-width: 1px;
+							border-bottom-width: 1px;
+							border-left-width: 1px;
+						border-width: 0 .7mm .7mm 0;
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+						content: "";
+						display: inline-block;
+						outline: none !important;
+						-webkit-outline: none !important;
+						-moz-outline: none !important;
+						-ms-outline: none !important;
+					}
+				}
+				form{
+					input[type=text], input[type=email], input[type=password], select{
+						border:0 none;
+						border-radius:0;
+						background:#fff;
+						box-shadow: none;
+						height: 50px;		
+						font-family: 'Raleway';	
+						width:100%;			
+						max-width:100%;			
+					}
+					.panel--title{
+						margin:0;
+						cursor: pointer;
+					}
+					.register--firstname{
+						input{
+							width: 48%;
+							float: left;
+							margin-right: 2%;
+						}
+					}	
+					.register--email{
+						input{
+							width: 48%;
+							float: left;
+							margin-right: 2%;
+						}
+					}	
+					.register--lastname{
+						input{
+						width: 49%;
+						float: left;
+						}
+					}			
+					.register--password{
+						input{
+						width: 49%;
+						float: left;
+						}
+					}	
+			
+					.select-field{
+						width:48%;
+						max-width:50%;
+						border:0 none;
+						border-radius:0;
+						background:#fff;
+						box-shadow: none;
+						height: 50px;		
+						font-family: 'Raleway';	
+					}
+					select {
+						font-family: 'Raleway';
+						color: #000;
+						font-size: 18px;
+						opacity: 1;
+						padding: 5px 10px 9px 10px;
+					}
+					
+					.select-field::after, .js--fancy-select::after{
+						content:' ';
+						border: 1px solid #000;
+						border-top-width: 1px;
+						border-right-width: 1px;
+						border-bottom-width: 1px;
+						border-left-width: 1px;
+						width: 15px;
+						height: 15px;
+						-webkit-transform: rotate(-45deg);
+						-ms-transform: rotate(-45deg);
+						-o-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+						border-width: 0 0 2px 2px;
+						top: 15px;
+						right: 15px;
+					}
+					.btn{
+						border: 0 none;
+						border-radius: 0;
+						height: 4rem;
+						text-align: center;
+						font-size: 27px;
+						font-family: 'Raleway';
+						text-transform: uppercase;
+						font-weight: 500;
+						width:100%;
+						max-width:100%;
+						i{
+							visibility:hidden;
+						}
+					} 
+					input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					    color: #000;
+						font-size: 18px;
+						opacity: 1;
+					}
+					input::-moz-placeholder { /* Firefox 19+ */
+					   color: #000;
+						font-size: 18px;
+						opacity: 1;
+					}
+					input:-ms-input-placeholder { /* IE 10+ */
+					    color: #000;
+						font-size: 18px;
+						opacity: 1;
+					}
+					input:-moz-placeholder { /* Firefox 18- */
+					    color: #000;
+						font-size: 18px;
+						opacity: 1;
+					}
+					h2, .panel--title{
+						background: transparent;
+						font-family: 'Vidaloka', serif;
+						color: #000;
+						font-size: 32px;
+						font-weight: normal !important;
+						height: 80px;
+						padding: 1.6rem;
+						margin:0;	
+						cursor: pointer;	
+						border: 1px solid #000;			
+					}
+				}
+				form#confirm--form{
+					.panel--body, .panel--body p, span label{
+						font-family: 'Raleway';
+						font-size: 20px;
+						line-height: 28px;
+						color: #000;
+						font-weight:normal;
+					}
+					.panel--body{
+						span.column--label label a{
+							font-weight:bold;
+						}
+					
+					}
+				}
+				form.payment#saveShippingID{					
+					.dispatch--method{
+						display:flex !important;						
+						.method--label{
+							label{
+								font-family: 'Raleway';
+								font-size: 17px;
+								line-height: 28px;
+								color: #000;
+								font-weight:normal;
+							}
+						}
+					}
+					.method--input{
+						padding-right: 10px;
+					}
+				}
+				form.payment#savePaymentID{
+					.panel{
+						margin-top: 0 !important;
+					}
+					.payment--method{
+						display:flex;
+						.method--label{
+							label{
+								font-family: 'Raleway';
+								font-size: 17px;
+								line-height: 28px;
+								color: #000;
+								font-weight:normal;
+							}
+						}
+						.method--description{
+							font-family: 'Raleway';
+							font-size: 20px;
+							line-height: 28px;
+							color: #000;
+							font-weight:normal;
+						}
+					}
+					.method--input{
+						padding-right: 10px;
+					}
+				}
+				
+				 #brill_account label.tab-label{
+					background: #ffffff;
+					font-family: 'Vidaloka', serif;
+					color: #000;
+					font-size: 38px;
+					font-weight: normal !important;
+					height: 80px;
+					padding: 1.6rem;
+					@media only screen and (min-width:320px) and (max-width:767px){
+						font-size: 18px;
+						height: 60px; 
+					}
+				}
+				 .panel--title{
+					background: transparent;
+					border:1px solid #000;
+					font-family: 'Vidaloka', serif;
+					color: #000;
+					font-size: 32px;
+					font-weight: normal !important;
+					height: 80px;
+					padding: 1.6rem;
+				}
+				.panel{
+						background: #f3f3f3;
+						border: 0 none;
+						.panel--body{
+							margin-top: 1rem;
+							background: #f3f3f3;
+							padding:0;
+						}
+					}
+
+			#register--form{
+				
+			}
+		}
+	}
+}
+.bcActive.panel--title{		
+	position: relative;
+	background: #fff !important; 
+	border:0 none !important; 
+}
+.bcActive.panel--title::after {
+	content: url(@bc_pen_image);			
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}
+.is--ctl-register #register--form.panel.register--form{
+	margin-bottom: 0 !important;
+}
+.is--ctl-checkout.is--act-cart{
+ section.content-main .content--wrapper .panel .panel--body{
+	background: #fff;
+ }
+ .basket--footer{
+	.product--table .basket--footer{
+		margin:0;
+	 }
+ }
+ .bcright-sidebar{
+	 padding-top: 6vh;
+  }
+}
+.is--ctl-checkout.is--act-shippingpayment{
+	section.content-main .content--wrapper .method--label{
+		width: 100%;
+	}
+	section.content-main .content--wrapper .method--input{
+		padding-left:15px;
+		input{
+			vertical-align: middle;
+		}
+	}
+	.panel{
+		.panel--title, h2, .payment--method-headline.panel--title{
+			margin-bottom:1rem !important;
+		}
+		.panel--body{
+			padding:1.6rem !important;
+			margin-bottom: 1rem !important;
+			background:transparent;
+			background-color:transparent;
+		}
+	}
+	#shippingPaymentForm{
+		.panel--body{
+			padding:0 !important;
+			margin-bottom: 1rem !important;
+			background:transparent;
+			background-color:transparent;
+		}
+	}
+	 section.content-main .content--wrapper .method--label{
+		padding-top: 0;
+	 }
+	 .body--revocation p
+	 {
+		font-family: 'Raleway';
+		font-size: 17px;
+		line-height: 28px;
+		color: #000;
+	 }
+	 .content--confirm .method--label{
+		padding-left:0;
+	}
+	.content--confirm .payment--method, .content--confirm .dispatch--method{
+		padding-bottom: 0;
+		border-bottom:0;
+	}
+	.register--content .payment--method, .register--content .dispatch--method{
+		display:flex;			
+	}
+}
+
+
+.is--ctl-checkout.is--act-cart .product--table {
+	.table--header{
+		font-family: 'Raleway';
+	}
+	.basket--footer {
+		margin: 0;
+	}
+}
+#bc-address-block{
+	.panel--actions{
+		padding:0 !important;
+		background-color: transparent;
+		.address--actions-change{
+			margin-top:20px;
+			a.btn{
+				background-color:#000 !important;
+				background:#000 !important;
+				color:#fff;
+				padding-top:10px;
+				border: 0 none;
+				border-radius: 0;
+				height: 4rem;
+				text-align: center;
+				font-size: 27px;
+				font-family: 'Raleway';
+				text-transform: uppercase;
+				font-weight: 500;
+				width: 100%;
+				max-width: 100%;
+				text-decoration: none;
+				margin-bottom:20px;
+			}	
+				
+		}	
+		a{
+			font-family: 'Raleway';
+			font-size: 20px;
+			line-height: 28px;
+			color: #000;
+			text-decoration: underline;
+		}	
+	}
+}
+
+.information--panel-item.information--panel-item-shipping{
+	.panel--actions{
+		padding:0 !important;
+		background-color: transparent;
+		.address--actions-change{
+			margin-top:20px;
+			
+			a.btn{
+				background-color:#000 !important;
+				background:#000 !important;
+				color:#fff;
+				padding-top:10px;
+				border: 0 none;
+				border-radius: 0;
+				height: 4rem;
+				text-align: center;
+				font-size: 27px;
+				font-family: 'Raleway';
+				text-transform: uppercase;
+				font-weight: 500;
+				width: 100%;
+				max-width: 100%;
+				text-decoration: none;
+				margin-bottom:20px;
+			}	
+			a{
+			font-family: 'Raleway';
+			font-size: 20px;
+			line-height: 28px;
+			color: #000;
+			text-decoration: underline;
+			}	
+		}
+		a{
+			font-family: 'Raleway';
+			font-size: 20px;
+			line-height: 28px;
+			color: #000;
+			text-decoration: underline;
+		}		
+	}
+}
+.is--ctl-checkout.is--minimal-header .header-main .logo--supportinfo{
+	display: none;
+}
+
+.is--ctl-checkout.is--act-confirm{
+
+	.confirm--content .information--panel-item.information--panel-address{
+		 .panel--body .shipping--panel{
+			width: 100%;				
+		}
+	}
+	.confirm--content .information--panel-item.information--panel-address .shipping--panel .btn {
+		background-color: #000;
+		background: #000;
+		color: #fff;
+		padding-top: 15px;
+		margin-top: 1rem;
+	}
+	 .information--panel-wrapper .information--panel-item-shipping{
+		padding: 2% 0 0 2%; 
+	 }
+}
+
+.is--ctl-checkout section.content-main .content--wrapper form.payment#saveShippingID .dispatch--method .method--label label{
+	pointer-events: none;
+		label{
+			color: #aaa;
+		}
+}
+.is--ctl-checkout section.content-main .content--wrapper form.payment#saveShippingID .dispatch--method .method--label label{
+	pointer-events: none;
+	label{
+			color: #aaa;
+		}
+}
+.bcright-sidebar{
+	.basket--details{
+		@media only screen and (min-width:1260px){
+			width: 60%;
+		}
+	}
+	.bc--images{
+		padding: 8px;
+		padding-left: 0;
+	}
+	h2{
+		margin-top:0;
+		color: #000;
+		font-size: 32px;
+	}
+	.price--details.tot{
+		margin-top: 20px;
+		margin-bottom: 20px;
+			font-weight:bold;
+	}
+	.price--details .amount, .price--details.tot .amount--tax{
+		margin: 0;
+		float: right;
+	}
+	 p{
+		margin-bottom:0;
+		color:#000;
+	}
+	ul{
+		margin-top:20px;
+		margin-bottom:20px;
+		 li{
+			color:#000;
+		}
+	}
+	h3{
+		color: #000;
+		font-size: 14px;
+	}
+}
+body.is--ctl-checkout.is--act-finish{
+	background: #f3f3f3;
+	.content-main--inner{
+			background:#fff;
+		}
+	.content.checkout--content.finish--content{
+		width:100%;
+		.panel--title{
+			margin: 0;
+		}
+		.panel--body{
+			margin-top: 0;
+			background: #fff;
+		}
+		.product--table .basket--footer{
+			margin: 0;
+		}
+		
+	}
+}
+.is--ctl-checkout.is--act-finish section.content-main{
+	display: block;
+}
+.is--ctl-account{
+	section.content-main .content--wrapper .panel--title {
+		background: #f3f3f3;
+    }
+}
+
+.is--ctl-checkout.is--act-confirm{
+	form{
+		.panel--title{
+			position:relative;
+		}		
+	}
+}
+/** finish action**/
+.is--ctl-checkout.is--act-finish{
+.page-wrap{
+	background: #fff;
+	.steps--container{
+			ul.steps--list{
+				#step-register-bc{
+				color: #7e7e7e;
+				span{
+					color: #7e7e7e;
+				}
+			}
+		}
+	}
+	section.content-main {
+		    display: inline-block;
+		    background: #fff;
+			.content-main--inner{
+				background:#f3f3f3;
+				.content--wrapper {
+					.finish{		
+							border: 0px solid #000 !important;
+							padding: 0rem !important;
+							width: 65% !important;		
+
+						}			
+					.information--finish{
+						background: #fff;
+						font-size: 30px;
+						font-weight: 300;
+						padding: 15px 30px;
+						width: 70%;
+						float:left;
+						span{
+							color:#000;
+						}
+					}	
+					.custom--finish--page{
+						float:left;
+						width:25%;
+						 a{
+							color: #fff;
+							background: #000;
+							border: 15px solid #0e0e0e;
+							font-size: 20px;
+							border-radius:0;
+							padding: 7px 30px;
+						}
+					}
+					.panel_button{
+						float:left;
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+/***media***/
+@media only screen and (min-width:1260px) and (max-width:1500px){ 
+	.bcright-sidebar .basket--details{
+		width: 80%;
+	}
+	.is--ctl-register{
+		.steps--container{
+		  ul.steps--list li {
+		  span[class^="icon"]{
+				font-size: 52px;
+		  }
+		  span.text{
+			font-size: 25px;
+		  }
+		}
+	 }
+	} 
+}
+.is--ctl-checkout.is--act-shippingpayment{
+	.payment--method{
+				.content--confirm .method--description{
+					padding-left: 0 !important;
+					font-weight: normal !important;
+				}
+			}
+	.content.content--confirm.product--table{
+		width: 89% !important;
+		float: right;
+	}
+}
+
+@media only screen and (min-width:1259px){ 
+	.is--ctl-register, .is--ctl-checkout, .is--ctl-account.is--act-index.is--user{ 
+		section.content-main{
+			width: 77% !important;
+			display:inline-block;
+			#registration, #brill_account, .content.confirm--content{
+				width: 89% !important;
+				float: right;
+			}
+		}
+		
+		
+		.bcright-sidebar {
+			width: 20%; 
+			padding-top: 0;
+		}
+	}
+	.is--ctl-register.is--act-index{
+		.bcright-sidebar{
+			padding-top: 0; 
+		}
+	}
+}
+@media only screen and (min-width:1260px) and (max-width:1570px){ 
+	.is--ctl-register, .is--ctl-checkout, .is--ctl-account.is--act-index.is--user{ 
+		section.content-main{
+			#registration, #brill_account, .content.confirm--content{ 
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){ 
+	.is--ctl-checkout, .is--ctl-checkout.is--act-confirm {
+		 .method--input input[type="radio"]:checked::after{
+			left: 52vw;
+		}
+	}
+}
+@media only screen and (min-width:1025px) and (max-width:1259px){ 
+	.is--ctl-checkout, .is--ctl-checkout.is--act-confirm {
+		.method--input input[type="radio"]:checked::after{
+			left: 53vw;
+		}
+	}
+}
+@media only screen and (min-width:768px) and (max-width:1259px){ 
+	.bcright-sidebar {
+		width: 27%; 
+	}
+	.is--ctl-register.is--act-index, .is--ctl-checkout.is--act-confirm {
+		.register--content{
+			width:100%;
+		}
+
+		section.content-main {
+			width: 70%;
+		}
+		.bcright-sidebar {
+			width: 25% !important;
+			margin: 5px 2%;
+		}
+	}
+	
+	.is--ctl-register.is--act-index, .is--ctl-checkout.is--act-confirm, .is--ctl-checkout.is--act-shippingpayment{
+		.payment--method-list.panel{
+			h2, .panel--title{
+				font-size: 26px;
+			}
+			.panel--body{
+				 .payment--method{
+					.method--label{
+						height: 100%;
+					}
+					.method--description{
+						 p{
+							width: 59%;
+							font-size: 13px;
+							line-height: 15px;
+						}
+					}
+				}
+			}
+		}
+		.product--table .table--actions .main--actions .btn{
+			font-size: 16px;
+		}
+	}
+	section.content-main{
+		.content-main--inner{
+			.confirm--outer-container{
+				.shipping-payment--information{
+					h2, .panel--title{
+						font-size: 26px;
+					}
+				}
+			}
+		}
+	}
+	 .is--ctl-checkout section.content-main .content--wrapper form .panel--title{
+		font-size: 23px;
+	}
+	
+}
+@media only screen and (max-width:767px){
+.is--ctl-register, .is--ctl-checkout{ 
+		section.content-main{
+			width: 100% !important;
+			#registration, .content.confirm--content{
+				width: 100% !important;
+				float: right;
+			}
+		}			
+	}
+	.is--ctl-register, .is--ctl-checkout, .is--ctl-account, .is--ctl-checkout.is--act-confirm{
+		.method--input input[type="radio"]:checked::after{
+			left: 91vw;
+		}
+	}
+	.is--ctl-register{
+		.payment--method-list.panel{
+		 .panel--body{
+		  .payment--method{
+			height:140px;
+		   .method--description{
+				font-size: 11px;
+				line-height: 20px;
+		   }
+		  }
+		 }
+		}
+	}
+	.is--ctl-register{
+		section.content-main .content--wrapper{
+			 .method--label{
+				label{
+					line-height: 20px;
+					font-size: 12px;
+				}
+				.method--description{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.is--ctl-register, .is--ctl-checkout, .is--ctl-account  {
+		section.content-main{
+		 .content--wrapper{
+			form {
+			.select-field, .register--firstname input, .register--lastname input, .register--email input, .register--password input{
+				width: 100%;
+				max-width: 100%;
+			}	
+		   }
+		    #register--form .register--birthdate div[class^="register--birth"]{
+				width: 100%;
+			}
+		 }
+		}	  
+	  }
+	.steps--container{
+		.steps--content{
+			border-top:0;	
+		}
+		  ul.steps--list {
+			  li.steps--entry {
+				  span.text{
+					display:none;
+				  }	
+				  span[class^="icon"]{
+					font-size: 30px;
+				  }
+			  }	
+			  li.steps--entry.is--active {
+				  span[class^="icon"]{
+					font-size: 45px;
+				  }
+			  }
+		  }	
+		}
+		.is--ctl-register.is--act-index.is--target-checkout{
+			#registration.register--content{
+				display: block;
+			}
+			.register--new-customer{
+				a{
+					display:none;
+				}
+			} 
+			header.header--main{
+				.header--navigation .logo-main .logo--shop{
+						display:block;
+				}
+				.logo-main.bc_logo_block {
+					display: block !important;
+				}
+			}
+
+		}
+		.is--ctl-register .header-main .logo--shop, 
+		.is--ctl-register.is--minimal-header.is--target-checkout .header-main .logo--shop{
+				display: block !important;
+		}
+		.logo-main.bc_logo_block{
+			display: block;
+		}
+		.content--wrapper form .register--firstname input{
+			width: 100%;
+		}	
+		.is--ctl-register.is--act-index{
+			.payment--method-list.panel{
+				.panel--body{
+					 .payment--method{
+						.method--label{
+							height: 100%;
+						}
+						.method--description{
+							 p{
+								font-size:10px;
+								line-height: 12px;
+								width: 52%;
+							}
+						}
+					}
+				}
+			}
+		}
+		.is--ctl-checkout.is--act-confirm{
+			.method--description{
+				 p{
+					font-size:10px;
+					line-height: 12px;
+					width: 52%;
+				}
+		}
+}
+@media only screen and (min-width:481px) and (max-width:767px){
+	.is--ctl-checkout.is--act-confirm .method--input input[type="radio"]:checked::after{
+		left: 64vw;
+	}
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+	.is--ctl-checkout.is--act-confirm , .is--ctl-checkout.is--act-shippingpayment{
+		.method--input input[type="radio"]:checked::after{
+			left: 64vw;
+		}
+		.payment--method-list.panel .panel--body .payment--method .method--description p {
+			width: 50%;
+			line-height: 15px;
+			font-size: 12px;
+		}
+		.payment--method-list.panel .panel--body .payment--method .method--description img{
+			right: 15vw;
+			width: 27%;
+		}
+	}
+}
+

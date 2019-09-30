@@ -1,0 +1,199 @@
+.is--ctl-account.is--user .sidebar-main + .content--wrapper {
+    margin-left: 0;
+}
+.is--ctl-account section.content-main{
+	width:70%;
+	display:inline-block;
+}
+#brill_account{
+	padding-top: 5rem;
+	width:100%
+}
+#brill_account tr td, #brill_account .tab .panel--body p{
+	font-family: 'Raleway';
+	font-size: 20px;
+	color: #000;
+	line-height: 35px;
+}
+
+.bcleft_mainview{
+	width:100%;
+	float:left;
+}
+.bcright-sidebar{
+width: 20%;
+display: inline-block;
+float:right;
+}
+.bccustom {
+	display:none;
+}
+.bcright-sidebar {
+	margin-right:0;
+	width:20%;
+	padding-top: 20vh;
+}
+.bcright-sidebar h2{
+	font-family: 'Vidaloka', serif;
+	font-weight: normal !important;
+	color: #000;
+	font-size: 25px;
+}
+.bctitle{
+font-family: 'Vidaloka', serif;
+color: #000;
+font-size: 55px;
+font-weight: normal;
+text-align:center;
+padding: 3rem 0 2rem 0;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.glas td{
+border:none;
+background:none;
+padding: .3125rem 3.825rem .3125rem .625rem;
+}
+.glas tr:nth-child(even) td {
+    background:none;
+}
+.is--ctl-account.is--act-index .sidebar-main{
+	display: none;
+}
+@media only screen and (min-width:1259px){
+	.is--ctl-account .header-main .logo-main .logo--shop{
+		width: 100%;
+	}
+} 
+@media only screen and (min-width:768px) and (max-width:1259px){
+	.is--ctl-account .header-main .logo-main{
+		width: 100%;
+	}
+	.is--ctl-account .header-main .logo-main .logo--shop .logo--link{
+			font-size: 22px;
+			width: 100%;
+	}
+	.is--ctl-account .bcright-sidebar{
+		width: 28%;
+		padding-top: 5rem;
+	}
+} 
+.bcbtn{
+padding: 2px 10px 2px 10px;
+    padding: .125rem .625rem .125rem .625rem;
+    line-height: 32px;
+    line-height: 2rem;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 14px;
+    font-size: .875rem;
+    background-color: #000;
+	-webkit-font-smoothing: inherit;
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid #dadae5;
+    color: #fff;
+	height: 50px;
+	padding-top: 8px;
+	font-size: 20px;
+		font-family: 'Raleway';
+}
+
+.row {
+  display:flex;
+  .col {
+    flex:1;
+    margin:30px;
+    &:last-child {
+      margin-left: 1em;
+    }
+  }
+  margin: 0 auto;
+}
+/* Accordion styles */
+.tabs {
+  overflow: hidden;
+}
+.is--ctl-account section.content-main
+{
+	min-height: 12vh !important;
+}
+.is--ctl-account section.content-main .content--wrapper #brill_account label.tab-label{
+	 margin-bottom: 1rem;
+	 padding-top: 1.2rem !important;
+}
+.tab {
+  color: white;
+  overflow: hidden;
+  padding-bottom:5px;
+  &-label {
+    color:black;
+    font-size:16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      background: darken(#fff, 10%);
+    }
+  }
+  &-content {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 1em;
+    color: #000;
+    background: #f0f0f0;
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #fff;
+    cursor: pointer;
+    &:hover {
+      background: darken(#fff, 10%);
+    }
+  }
+}
+
+input:checked {
+  + .tab-label {
+    background:#fff;
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100%;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width:320px) and (max-width:767px){
+	.is--ctl-account section.content-main, .bcright-sidebar{
+		width:100%;
+	}
+	.bcright-sidebar{
+		padding-top: 0;
+	}
+	#brill_account .row {
+		display: inline-block;
+	}
+	.bcright-sidebar{
+		float:none;
+		padding-left:20px;
+	}
+}
